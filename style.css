@@ -1,0 +1,19 @@
+#form1 {
+    text-align: center;
+    background-color: burlywood;
+}
+
+#time{
+    text-align: center;
+    color: darkgray;
+    font-size: 50px;
+}
+#description{
+    color: #848484;
+}
+
+#description{
+    margin-top: 15%;
+    font-size: 30px;
+    margin-left: 1%;
+}
