@@ -1,19 +1,26 @@
-#form1 {
-    text-align: center;
-    background-color: burlywood;
+body {
+  background-color: black
 }
 
-#time{
-    text-align: center;
-    color: darkgray;
-    font-size: 50px;
-}
-#description{
-    color: #848484;
+form {
+  text-align: center;
+  background-color: burlywood;
 }
 
-#description{
-    margin-top: 15%;
-    font-size: 30px;
-    margin-left: 1%;
+form table {
+  margin: 0 auto;
+}
+
+#time {
+  text-align: center;
+  color: darkgray;
+  font-size: 50px;
+}
+
+#description {
+  text-align: center;
+  color: #848484;
+  margin-top: 15%;
+  margin-left: 1%;
+  font-size: 30px;
 }

@@ -1,51 +1,52 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-        <link rel = "stylesheet", type = "text/css", href="style.css">
-        <title> Set a New Timer </title>
-        <script src="countdown.js"> </script>
-    </head>
-    
-    <body style = "background-color: black">
-        
-        <div id="description">
-            Time left until 
-        </div>
-        
-        <div id="time">
-            Days, Hours, Minutes, Seconds
-        </div>
-        
-        <p style="color: white; text-align:center"> Refresh the page to set a new timer </p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Timer</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="description">
+      Time left until
+    </div>
 
-        <form id="form1">
-            <table align = "center">
-                <tr>
-                <td> Event: </td> <td> <input type = "text" name = "subject"></td>
-                </tr>
-                <tr>
-                <td> Deadline Year: </td> <td> <input type="number" name = "dedyear"> </td>
-                </tr>
-                <tr>
-                <td> Deadline Month: </td> <td> <input type="number" name = "dedyear"> </td>
-                </tr>
-                <tr>
-                <td> Deadline Date: </td> <td> <input type="number" name = "dedyear"> </td>
-                </tr>
-                <tr>
-                <td> Deadline Hour: </td> <td> <input type="number" name = "dedyear"> </td>
-                </tr>
-                <tr>
-                <td> Deadline Minute: </td> <td> <input type="number" name = "dedyear"> </td>
-                </tr>
-                <tr>
-                <td> Deadline Second: </td> <td> <input type="number" name = "dedyear"> </td>
-                </tr>
-                <br>
-            </table>
-            
-            <br> <div id = "subbutton"> <input type="button" value="Submit"> </div> <br>
-        </form>
+    <div id="time">
+      Days, Hours, Minutes, Seconds
+    </div>
+    <p style="color: white; text-align:center"> Refresh the page to set a new timer</p>
 
-    </body>
+    <form id="form1">
+      <br>
+      <table>
+        <tr>
+          <td>Event:</td>
+          <td><input type="text" name="subject"></td>
+        </tr>
+        <tr>
+          <td>Date:</td><td><input type="text" id="datepicker"></td>
+        </tr>
+        <tr>
+        <tr>
+          <td>Hour: </td> <td> <input type="number" name="deadline_hour"> </td>
+        </tr>
+        <tr>
+          <td>Minute:</td> <td> <input type="number" name="deadline_minute"> </td>
+        </tr>
+        <tr>
+          <td>Second:</td> <td> <input type="number" name="deadline_second"> </td>
+        </tr>
+      </table>
+      <br>
+      <input id="submitForm" type="button" value="Submit">
+      <br>
+    </form>
+
+    <!-- Scripts at the bottom of the page, before the body closing tag, for faster page load -->
+    <script src="jquery-1.12.4.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script src="countdown.js"></script>
+  </body>
 </html>
