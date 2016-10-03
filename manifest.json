@@ -1,11 +1,9 @@
 {
-"manifest_version": 2,
-"name": "Countdown Clock",
-"version": "1.0",
-"chrome_url_overrides" : {
+  "manifest_version": 2,
+  "name": "Countdown Clock",
+  "version": "1.0",
+  "chrome_url_overrides" : {
     "newtab": "newtimer.html"
-},
-"author": "AnnieZhou08"
-
-
+  },
+  "author": "AnnieZhou08"
 }
